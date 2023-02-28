@@ -32,7 +32,6 @@
 .slider .slider__slide {}
 .slider .slider__nav {}
 .slide {
-    padding: 10px;
     width: 100%;
     min-height: 300px;
     box-sizing: border-box;
@@ -41,28 +40,62 @@
     animation-duration: 14s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: 'Roboto Regular', sans-serif;
 
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 }
 .slide:first-child {
     background-color: lightcoral;
     left: 0;
     animation-name: slide-1;
+    background-image: url("../images/download.jpeg");
 
 }
 .slide:nth-child(2) {
     background-color: lightskyblue;
     left: 100%;
     animation-name: slide-2;
+    background-image: url("../images/gm-af5bc3c6-526a-4ec1-9e96-860680277267-tesla-main.jpg");
 }
 .slide:last-child {
     background-color: lightgreen;
     left: 200%;
     animation-name: slide-3;
+    background-image: url("../images/Tesla-Logo-Hero.webp");
 }
+.slide .side__cover{
+    background-color: rgba(0, 0, 0, .7);
+    padding: 10px;
+    position: absolute;
+
+}
+
 .slide .slide__hdl {
     margin: 0;
+    font-weight: 400;
 }
-.slide .slide__text {}
+.slide .slide__text {
+    font-weight: 100;
+}
 .slide .slide__link {}
 .nav {}
 .nav .nav__btn {}
