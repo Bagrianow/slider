@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'roboto_condenseditalic';
+    src: url('../fonts/robotocondensed-italic-webfont.woff2') format('woff2'),
+    url('../fonts/robotocondensed-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_condensedlight_italic';
+    src: url('../fonts/robotocondensed-lightitalic-webfont.woff2') format('woff2'),
+    url('../fonts/robotocondensed-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @keyframes slide-1 {
     0% { left: 0; }
     30% { left: 0; }
@@ -46,57 +62,43 @@
     color: white;
     font-family: 'Roboto Regular', sans-serif;
 
-@font-face {
-    font-family: 'Roboto Light';
-    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Roboto Regular';
-    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 }
 .slide:first-child {
-    background-color: lightcoral;
     left: 0;
     animation-name: slide-1;
     background-image: url("../images/download.jpeg");
 
 }
 .slide:nth-child(2) {
-    background-color: lightskyblue;
     left: 100%;
     animation-name: slide-2;
     background-image: url("../images/gm-af5bc3c6-526a-4ec1-9e96-860680277267-tesla-main.jpg");
 }
 .slide:last-child {
-    background-color: lightgreen;
     left: 200%;
     animation-name: slide-3;
     background-image: url("../images/Tesla-Logo-Hero.webp");
 }
-.slide .side__cover{
-    background-color: rgba(0, 0, 0, .7);
+
+.slide .slide__cover {
+    background-color: rgba(0, 0, 0, .3);
     padding: 10px;
     position: absolute;
-
+    bottom: 0;
+    width: 100%;
 }
 
 .slide .slide__hdl {
     margin: 0;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-family: 'roboto_condenseditalic', sans-serif;
 }
 .slide .slide__text {
-    font-weight: 100;
+    /*font-weight: 100;*/
+    font-family: 'roboto_condensedlight_italic', sans-serif;
 }
 .slide .slide__link {}
+
 .nav {}
 .nav .nav__btn {}
 .nav .nav__btn.nav__btn--next {}
